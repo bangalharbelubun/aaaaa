@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logoss"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logoss"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:targetApi="31">
+
+        <!-- Loading screen (entry point) -->
+        <activity
+            android:name=".Loading"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Activity for viewing order history -->
+        <activity
+            android:name=".RiwayatActivity"
+            android:exported="false" />
+
+        <!-- Activity for displaying the order list -->
+        <activity
+            android:name=".DaftarPesananActivity"
+            android:exported="false" />
+
+        <!-- Activity for successful order message -->
+        <activity
+            android:name=".SuksesPesan"
+            android:exported="false" />
+
+        <!-- Activity for placing an order -->
+        <activity
+            android:name=".PesanActivity"
+            android:exported="false" />
+
+        <!-- Main Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTask" /> <!-- Optional: ensures only one instance of MainActivity is created -->
+
+        <!-- Activity for displaying products from selected brand -->
+        <activity
+            android:name=".ItemMenuActivity"
+            android:exported="true" /> <!-- Added ItemMenuActivity -->
+
+        <!-- Activity for payment process -->
+        <activity
+            android:name=".PaymentActivity"
+            android:exported="true" /> <!-- Added PaymentActivity -->
+
+        <!-- Confirmation Activity -->
+        <activity
+            android:name=".ConfirmationActivity"
+            android:exported="false"/>
+
+        <!-- Payment Success Activity -->
+        <activity
+            android:name=".PaymentSuccessActivity"
+            android:exported="true" />
+
+        <!-- Profile Activity -->
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" /> <!-- Added ProfileActivity -->
+
+        <!-- Edit Profile Activity -->
+        <activity
+            android:name=".EditProfileActivity"
+            android:exported="false" /> <!-- Added EditProfileActivity -->
+
+        <!-- Login Activity -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" /> <!-- Pastikan ini ada -->
+
+        <!-- Login Activity -->
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true" /> <!-- Pastikan ini ada -->
+
+    </application>
+
+</manifest>

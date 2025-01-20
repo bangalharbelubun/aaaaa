@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "603021481438",
+    "project_id": "yangkesekian-f2157",
+    "storage_bucket": "yangkesekian-f2157.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:603021481438:android:a1e2625dbf5cac5f79f94f",
+        "android_client_info": {
+          "package_name": "com.example.aplikasipemesananmakanansa"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdZF3dklhcCOzwtgcALM-UVIduJWfuBfw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

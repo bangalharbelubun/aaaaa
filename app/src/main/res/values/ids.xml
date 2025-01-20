@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="brandLogo" type="id" />
+    <item name="itemImage" type="id" />
+    <item name="itemPrice" type="id" />
+    <item name="itemName" type="id" />
+    <item name="itemRating" type="id" />
+    <item name="progressBar" type="id" />
+</resources>

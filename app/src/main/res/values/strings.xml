@@ -1,0 +1,12 @@
+<resources>
+    <!-- Nama aplikasi -->
+    <string name="app_name">AplikasiPemesananMakananSA</string>
+    <string name="product_image_desc" />
+
+    <!-- Array untuk metode pembayaran -->
+    <string-array name="payment_methods">
+        <item>GOPAY - Nomor: 081234567890 - Atas Nama: John Doe</item>
+        <item>ShopeePay - Nomor: 0987654321 - Atas Nama: Jane Smith</item>
+        <item>BRI - Nomor Rekening: 123-456-7890 - Atas Nama: Alex Johnson</item>
+    </string-array>
+</resources>

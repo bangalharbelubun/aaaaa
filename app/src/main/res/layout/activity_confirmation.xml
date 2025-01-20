@@ -1,0 +1,80 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink"
+    android:padding="32dp">
+
+    <!-- Judul Metode Pembayaran -->
+    <TextView
+        android:id="@+id/paymentMethodTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Metode Pembayaran"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="150dp" />
+
+    <!-- Detail Metode Pembayaran -->
+    <TextView
+        android:id="@+id/paymentMethodDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Detail metode pembayaran"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/paymentMethodTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Dropdown Pilihan Rekening (Spinner) -->
+    <Spinner
+        android:id="@+id/spinnerPaymentMethod"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/paymentMethodDetail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <!-- Alamat Pengiriman -->
+    <EditText
+        android:id="@+id/etShippingAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Alamat Pengiriman"
+        android:padding="12dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/spinnerPaymentMethod"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <!-- Tombol Konfirmasi Pembayaran -->
+    <Button
+        android:id="@+id/btnConfirmPayment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Konfirmasi Pembayaran"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/etShippingAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="32dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

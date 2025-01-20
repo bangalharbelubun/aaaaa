@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:elevation="4dp"
+    android:padding="16dp"
+    android:layout_marginBottom="25dp"
+    android:clipToPadding="false"
+    android:clipChildren="false"
+    android:layout_marginHorizontal="8dp">
+
+    <!-- Product Image -->
+    <ImageView
+        android:id="@+id/itemImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/sample_image"
+        android:scaleType="centerCrop"
+        android:background="@drawable/image_background"
+        android:contentDescription="@string/product_image_desc" />
+
+    <!-- Product Details -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="12dp"
+        android:gravity="center_vertical">
+
+        <!-- Product Name -->
+        <TextView
+            android:id="@+id/itemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Name"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+
+        <!-- Product Price -->
+        <TextView
+            android:id="@+id/itemPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp 30.000"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="4dp" />
+
+        <!-- Product Rating -->
+        <TextView
+            android:id="@+id/itemRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rating: 4.5"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+</LinearLayout>

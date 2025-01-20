@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/pink"
+    android:padding="16dp">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="222dp"
+        android:layout_height="206dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="100dp"
+        app:srcCompat="@drawable/logoss" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:hint="Name" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+
+        android:text="Register" />
+</LinearLayout>
